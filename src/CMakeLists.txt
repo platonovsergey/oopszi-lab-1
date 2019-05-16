@@ -1,0 +1,12 @@
+﻿cmake_minimum_required (VERSION 3.8)
+
+add_executable(task1 task1.c)
+add_executable(task2 task2.c)
+add_executable(task3 task3.c)
+add_executable(task4 task4.c)
+add_executable(task5 task5_main.c task5_func.c)
+#add_executable(task6 task6_main.c)
+add_executable(task7 task7_main.c task7_func.c headers/func.h)
+add_executable(task8 task7_main.c)
+add_library(task8_lib STATIC task7_func.c)
+target_link_libraries(task8 task8_lib)
